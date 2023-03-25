@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stop watch</title>
+<link href="https://cdn.jsdelivr.net/npm/daisyui@2.51.3/dist/full.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body>
+     <header>
+        <h1 class="text-6xl text-center mt-4">My stop watch</h1>
+     </header>
+     <main>
+        <section class="mt-16">
+            <div class="card w-96 bg-base-100 shadow-xl mx-auto bg-neutral-300">
+                <div class="card-body text-center">
+                  <h2 class="card-title mx-auto mb-8 text-2xl">Count your time</h2>
+                <div class="flex justify-between items-center mx-8">
+                    <h1 id="current-hour" class="text-7xl">0</h1> <span class="text-7xl">:</span>
+                    <h1 id="current-minute" class="text-7xl">0</h1> <span class="text-7xl">:</span>
+                    <h1 id="current-second" class="text-7xl">0</h1>
+                </div>
+                  <div class="card-actions justify-center mt-8">
+                    <button  onclick="startCount()" class="btn btn-primary">Start</button>
+                    <button  onclick="stopCount()" class="btn btn-primary">Stop</button>
+                    <button onclick="resetCount()" class="btn btn-primary">Reset</button>
+                  </div>
+                </div>
+              </div>
+        </section>
+     </main>
+    <!-- js file -->
+    <script src="index.js"></script>
+</body>
+</html>
